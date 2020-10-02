@@ -2,7 +2,7 @@
 $demos = json_decode(file_get_contents('demos.json'));
 
 function support($support, $url) {
-  $browsers = explode(' ', 'ie firefox opera safari chrome'); // big 5 - should I add iPhone (for geo, etc)?
+  $browsers = explode(' ', 'ie firefox opera safari chrome microsoft edge'); // big 5 - should I add iPhone (for geo, etc)?
 
   $live = isset($support->live) ? explode(' ', $support->live) : array();
   $nightly = isset($support->nightly) ? explode(' ', $support->nightly) : array();
